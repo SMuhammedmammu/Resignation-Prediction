@@ -1,0 +1,109 @@
+/* Result box styling */
+body {
+    background-color: rgba(217, 217, 217, 0.8);
+    margin: 200px auto;
+    padding: 20px;
+    width: 50%;
+    border-radius: 10px;
+    text-align: center;
+    /* border: 2px solid rgba(237, 237, 237, 0.6); Light border to enhance contrast */
+    background-image: url('bg image.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+
+/* body {
+    background-color: rgba(206, 130, 130, 0.8);
+    margin: 20px auto;
+    padding: 20px;
+    width: 50%;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 2px 2px 10px rgba(252, 252, 252, 0.5);
+    background-image: url('bg image.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+} */
+.box {
+    background-color: white; /* Set the box's background to white */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+    border: 2px solid rgba(0, 0, 0, 0.1); /* Subtle border around the box */
+    text-align: center; /* Center the content inside */
+}
+
+.box h1 {
+    font-size: 36px;
+    color: #333; /* Dark color for headings */
+    font-family: Arial, sans-serif;
+}
+
+.box p {
+    color: #39a22d; /* Light grey for paragraph text */
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+/* h1 {
+    font-size: 36px;
+    color: #0e1012;
+    text-align: center;
+    margin-bottom: 20px;
+}
+p {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    color: #68ab7e; /* Prediction sentence color */
+    /* margin: 0;
+} */
+
+/* Center the back link */
+a {
+    display: block;
+    margin: 20px auto;
+    color: #1488c2;
+    text-align: center;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+.go-back-btn {
+    padding: 10px 20px;
+    background-color: #0a79f1; /* Green background */
+    color: white; /* White text */
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+.go-back-btn:hover {
+    background-color: #1c1e1c; /* Darker green on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 500px) {
+    .container {
+        padding: 20px;
+        max-width: 100%; /* Utilize full screen width on smaller devices */
+    }
+
+    input, button {
+        font-size: 12px; /* Adjust font size for smaller screens */
+        padding: 8px;
+    }
+
+    h1 {
+        font-size: 20px; /* Adjust header size for small screens */
+    }
+}
