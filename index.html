@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Prediction</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Employee Prediction Form</h1>
+        <form action="/result" method="post">
+            <!-- Gender -->
+            <div class="form-group">
+                <label for="Gender">Gender</label>
+                <select name="Gender" id="Gender" required>
+                    {% for option in gender_options %}
+                        <option value="{{ option }}">{{ option }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+
+            <!-- Education Level -->
+            <div class="form-group">
+                <label for="Education_Level">Education Level</label>
+                <select name="Education_Level" id="Education_Level" required>
+                    {% for option in education_options %}
+                        <option value="{{ option }}">{{ option }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+
+            <!-- Job Title -->
+            <div class="form-group">
+                <label for="Job_Title">Job Title</label>
+                <select name="Job_Title" id="Job_Title" required>
+                    {% for option in job_title_options %}
+                        <option value="{{ option }}">{{ option }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+
+            <!-- Department -->
+            <div class="form-group">
+                <label for="Department">Department</label>
+                <select name="Department" id="Department" required>
+                    {% for option in department_options %}
+                        <option value="{{ option }}">{{ option }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+
+            <!-- Numeric Fields -->
+            <div class="form-group">
+                <label for="Age">Age</label>
+                <input type="number" name="Age" id="Age" min="18" required>
+            </div>
+
+            <div class="form-group">
+                <label for="Years_At_Company">Years at Company</label>
+                <input type="number" name="Years_At_Company" id="Years_At_Company" min="0" required>
+            </div>
+
+            <div class="form-group">
+                <label for="Performance_Score">Performance Score</label>
+                <input type="number" name="Performance_Score" id="Performance_Score" min="1" max="5" required>
+            </div>
+
+            <div class="form-group">
+                <label for="Monthly_Salary">Monthly Salary</label>
+                <input type="number" name="Monthly_Salary" id="Monthly_Salary" required>
+            </div>
+
+            <div class="form-group">
+                <label for="Work_Hours_Per_Week">Work Hours per Week</label>
+                <input type="number" name="Work_Hours_Per_Week" id="Work_Hours_Per_Week" required>
+            </div>
+
+            <div class="form-group">
+                <label for="Projects_Handled">Projects Handled</label>
+                <input type="number" name="Projects_Handled" id="Projects_Handled" required>
+            </div>
+
+            <div class="form-group">
+                <label for="Overtime_Hours">Overtime Hours</label>
+                <input type="number" name="Overtime_Hours" id="Overtime_Hours" required>
+            </div>
+
+            <div class="form-group">
+                <label for="Sick_Days">Sick Days</label>
+                <input type="number" name="Sick_Days" id="Sick_Days" required>
+            </div>
+
+            <div class="form-group">
+                <label for="Remote_Work_Frequency">Remote Work Frequency</label>
+                <input type="number" name="Remote_Work_Frequency" id="Remote_Work_Frequency" min="0" max="150" required>
+            </div>
+
+            <div class="form-group">
+                <label for="Team_Size">Team Size</label>
+                <input type="number" name="Team_Size" id="Team_Size" required>
+            </div>
+
+            <div class="form-group">
+                <label for="Training_Hours">Training Hours</label>
+                <input type="number" name="Training_Hours" id="Training_Hours" required>
+            </div>
+
+            <div class="form-group">
+                <label for="Promotions">Promotions</label>
+                <input type="number" name="Promotions" id="Promotions" required>
+            </div>
+
+            <div class="form-group">
+                <label for="Employee_Satisfaction_Score">Employee Satisfaction Score</label>
+                <input type="number" name="Employee_Satisfaction_Score" id="Employee_Satisfaction_Score" min="1" max="5" step="0.01" required>
+            </div>
+
+            <!-- Submit Button -->
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
